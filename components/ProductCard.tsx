@@ -5,7 +5,7 @@ export default function ProductCard({ item }: { item: Product }) {
   return (
     <div className="rounded-xl border p-4 hover:shadow-md transition">
       <div className="relative aspect-square w-full overflow-hidden rounded-lg bg-gray-50">
-        <Image src={item.image} alt={item.title} fill sizes="(min-width: 768px) 25vw, 50vw" className="object-cover" />
+        <Image src={item.image} alt={item.title} fill className="object-cover" />
       </div>
       <div className="mt-3 flex items-center justify-between">
         <h3 className="font-medium">{item.title}</h3>
